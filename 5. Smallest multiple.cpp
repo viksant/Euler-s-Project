@@ -15,11 +15,11 @@ bool isDivisible(int number)
 }
 
 int main() {
-	int number = 1;
+	int number = 20;
 	while (true){
 		if (isDivisible(number))
 			break;
-		number++;
+		number+=20;
 	}
 
 	std::cout << number;
