@@ -8,19 +8,16 @@ Hence the difference between the sum of the squares of the first ten natural num
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 */
 
-
 int main() {
 
-	int square = 0, sum_square = 0, result = 0;
-	int sum = 0;
+	int square = 0, sum_square = 0, sum=0;
 	for (int i=1; i<=100; i++)
 	{
 		square = square + pow(i, 2);
 		sum = sum + i;
 	}
 	sum_square = pow(sum, 2);
-	result = sum_square - square;
-	cout << result;
+	cout << sum_square - square;;
 
 	return 0;
 }
